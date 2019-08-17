@@ -30,8 +30,8 @@ def main():
         rand = randint(10) #0~9の中からランダムに１つの数を抽出
 
         M1 = M
-        e1 = e
         e2 = e1
+        e1 = e
 
         if rand == 5 or rand == 7 or rand == 3:
             noize = randint(-30, 30) / 10
