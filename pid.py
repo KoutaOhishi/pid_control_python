@@ -46,8 +46,8 @@ def main():
 
     for i in range(1,t):
         M1 = M
-        e1 = e
         e2 = e1
+        e1 = e
         e = goal - y_list[i-1]
 
         M = M1 + Kp * (e-e1) + Ki * e + Kd * ((e-e1) - (e1-e2))
