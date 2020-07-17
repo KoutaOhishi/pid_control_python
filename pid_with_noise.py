@@ -2,7 +2,6 @@
 import math
 import numpy as np
 
-from sympy import *
 from matplotlib import pyplot as plt
 from numpy.random import *
 
@@ -48,7 +47,8 @@ def main():
         y_list.append(M)
         x_list.append(i)
 
-    plt.plot(x_list, y_list)
+    plt.hlines([goal], 0, t, "red", linestyles='dashed')
+    plt.plot(x_list, y_list, color="b")
     plt.ylim(0, goal*2)
     plt.show()
 
